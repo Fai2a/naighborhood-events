@@ -42,7 +42,7 @@ function RegisterPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-green-500 px-4">
+    <div className="flex items-center justify-center min-h-screen px-4">
       <div className="w-full max-w-md bg-white shadow-lg rounded-2xl p-8">
         {/* Title */}
         <h2 className="text-3xl font-extrabold text-center mb-6 text-green-600">
