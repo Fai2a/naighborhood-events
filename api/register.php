@@ -26,11 +26,14 @@ if (!$name || !$email || !$password || !in_array($role, ['resident','admin'])) {
     exit;
 }
 
+// Database connection (via db.php)
+require_once __DIR__ . "/../Backend/database.php";
+
 // Database connection
-$host = "localhost";
-$db = "naighborhood-events"; // Your DB name
-$user = "root";              // DB username
-$pass = "";                  // DB password (empty for XAMPP)
+// $host = "localhost";
+// $db = "naighborhood-events"; // Your DB name
+// $user = "root";              // DB username
+// $pass = "";                  // DB password (empty for XAMPP)
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {

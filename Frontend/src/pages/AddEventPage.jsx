@@ -230,6 +230,7 @@ function AddEvent() {
           <option value="Lahore">Lahore</option>
           <option value="Karachi">Karachi</option>
           <option value="Islamabad">Islamabad</option>
+          <option value="Faisalabad">Faisalabad</option>
           <option value="Multan">Multan</option>
         </select>
 
