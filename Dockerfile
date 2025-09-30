@@ -1,11 +1,12 @@
 # Use official PHP + Apache image
 FROM php:8.2-apache
 
-# Install PHP extensions if needed (example: mysqli for MySQL)
+# Install PHP extensions (MySQL support)
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Copy backend and api into Apache root
-http://localhost:3000/login
+# Copy backend and API into Apache root
+COPY Backend/ /var/www/html/
+COPY api/ /var/www/html/api/
 
 # Set working directory
 WORKDIR /var/www/html
